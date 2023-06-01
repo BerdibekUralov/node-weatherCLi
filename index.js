@@ -30,7 +30,7 @@ const startCli = () => {
     return saveToken(args.t)
   }
   // result
-  getWeather("Tashkent")
+  getWeather(process.env.CITY ?? "Tashkent")
 }
 
 startCli()
